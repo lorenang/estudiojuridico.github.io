@@ -1,0 +1,745 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000000;
+    font-family: 'Tenor Sans', sans-serif, Vegur, 'PT Sans', Verdana;
+}
+
+h1 {
+    color :#ffffff;
+}
+h2 {
+    color :#ffffff;
+}
+h3 {
+    color :#ffffff;
+}
+h4 {
+    color :#ffffff;
+}
+h5 {
+    color :#ffffff;
+}
+h6 {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+
+/* Header */
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+     /*nav*/
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: rgb(5, 5, 5);
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(248, 242, 242, 0.993);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+
+}
+
+.nav .logo {
+    height: 100px;
+
+}
+
+.nav .logo img {
+    height: 100%;
+    vertical-align: top;
+}
+
+.enlaces-header {
+    font-weight: 350;
+    transition: ease-in-out 0.5s;
+
+}
+
+.nav .enlaces-header a {
+    color: #f2f4f7;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.hamburguer {
+    width: 80px;
+    height: 80px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+.hamburguer>i {
+    font-size: 25px;
+    line-height: 80px;
+}
+
+    /*contenedor*/
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.contenido-header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-header>img {
+    width: 550px;
+    animation: ease-in animat 1s;
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.textos-header {
+    margin: 0 0 0 20px;
+
+}
+
+.contenido-header p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #ffffff;
+}
+
+.contenido-header a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #000000;
+    text-align: center;
+    color: rgb(255, 254, 254);
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgb(244, 246, 245);
+}
+
+/* areas de practica */
+.contenedor1 {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.titulo {
+    font-size: 50px;
+    color: #ffffff;
+
+}
+.contenedor-articulo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.articulo {
+    width: 29%;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+
+}
+
+.articulo:hover {
+    box-shadow: 0 4px 10px rgba(7, 7, 7, 0.26);
+
+    transform:scale(1.5,1.5);
+	-webkit-transform:scale(1.5,1.5);
+	-ms-transform:scale(1.5,1.5);
+
+}
+
+.articulo>i {
+    font-size: 30px;
+    color: #fff;
+    background: #000000;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.46);
+}
+
+.articulo>h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    color:#000000
+}
+
+.articulo>p {
+    font-weight: 100;
+    color: #000000;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.articulo>a {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.articulo>a:hover {
+    color: #36336b;
+    transition: color .5s;
+}
+
+/* Especialistas */
+
+.group {
+    padding-top: 30px;
+}
+
+.conten-lawyer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lawyers {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.lawyers .lawyer {
+    width: 45%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 40px 35px;
+    margin-bottom: 20px;
+}
+
+.lawyers .lawyer h4 {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.lawyers .lawyer p {
+    color: #000000;
+    font-weight: 300;
+}
+
+.equipo-text {
+    width: 37%;
+}
+
+.equipo-text h4 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.equipo-text p {
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.equipo-text>a {
+
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+
+    background: #000000;
+    margin: 28px 0 0 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    box-shadow: 0 8px 32px rgb(244, 246, 245);
+}
+
+
+/* About us */
+
+.about-us {
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.about-us>img {
+    width: 500px;
+    height: 50%;
+}
+
+.texto-about-us {
+    margin: 0 0 0 30px;
+    width: 50%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+
+}
+
+.texto-about-us h2 {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #ffffff;
+}
+
+.texto-about-us p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #ffffff;
+}
+
+.texto-about-us a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #000000;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgb(255, 255, 255);
+}
+
+
+/* Contacto */
+
+.contact {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact>iframe {
+    width: 500px;
+}
+
+.box-contact {
+    margin: 30px 30px 0 0;
+
+}
+
+.box-contact h4 {
+    font-size: 22px;
+    color: #f2f2f2;
+    width: 350px;
+    text-align: left;
+
+}
+.box-contact h3 {
+    font-size: 18px;
+    color: #f2f2f2;
+    width: 200px;
+    text-align: center;
+
+}
+
+.box-contact i {
+    color: #ffffff;
+    font-size: 20px;
+
+    display: inline;
+    padding: 10px 0;
+    width: 120px;
+
+}
+
+/*Formulario*/
+.contacto {
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+form{
+    width:750px;
+    height:450px;
+    background:#000000;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    position:relative;
+
+}
+form .h2{
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
+    color:#ffffff;
+    border-bottom:3px solid #78788c
+}
+form input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2;
+    color: white;
+    font-size: 18px;
+}
+form input:focus{
+    border-bottom:2px solid #78788c
+}
+form p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:18px;
+    color:#bebdbd;
+    font-style: bold;
+}
+form .button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    border:2px solid #78788c;
+    background:white;
+    color:#000000;
+    cursor:pointer;
+    transition:all .3s;
+
+}
+form button:hover{
+    background:#000000;
+    color:#fff
+}
+
+
+/* footer */
+
+footer {
+    /* background: #f2f2f2; */
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 20%;
+    text-align: center;
+}
+
+.partFooter h4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partFooter a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.partFooter a:hover {
+    color: #535353;
+}
+
+.partFooter img {
+    width: 70%;
+}
+
+.social-media i {
+    font-size: 20px;
+    display: inline-block;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media i:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+
+/* Breakpoints responsive */
+
+@media screen and (min-width: 600px) {
+  .form .grid-1 {
+    display: grid;
+    grid-gap: 1.5rem;
+  }
+
+  .form .grid-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-form .grid-2 {
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:800px) {
+    .titulo {
+        font-size: 45px;
+    }
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+    }
+
+    .contenido-header>img {
+        width: 400px;
+    }
+
+    .textos-header {
+        margin: 0;
+    }
+
+    /* About us */
+
+    .articulo {
+        width: 45%;
+    }
+
+    /* about us */
+
+    .about-us {
+        height: 720px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .about-us>img {
+        width: 400px;
+    }
+
+    /* equipo */
+
+    .conten-results {
+        flex-direction: column-reverse;
+    }
+
+    .equipo-text>a {
+        margin-bottom: 60px;
+        box-shadow: 0 8px 32px rgba(255, 255, 255, 0.46);
+    }
+
+    .lawyers {
+        width: 100%;
+        /* justify-content: space-between; */
+    }
+
+    .equipo-text {
+        width: 100%;
+    }
+
+    /* Services */
+
+    .contact {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .box-contact {
+        margin: 0 0 40px 0;
+
+    }
+
+    .box-contact h4 {
+        width: 500px;
+    }
+
+    .contact>iframe {
+        width: 400px;
+    }
+
+
+    /* Footer */
+
+    .footer {
+        justify-content: space-evenly;
+    }
+
+    .partFooter {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .titulo {
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .contenido-header {
+        height: 650px;
+    }
+
+    .nav {
+        padding: 0 10px;
+    }
+
+    .contenido-header>img {
+        width: 10px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background: #000000;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+    }
+
+    .nav .menudos {
+
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    /* About us */
+
+    .articulo {
+        width: 95%;
+    }
+
+
+    /* results */
+
+    .lawyers .lawyer {
+        width: 95%;
+    }
+
+    .equipo-text h4 {
+        font-size: 35px;
+    }
+
+    /* Services */
+
+    .contact>iframe {
+        width: 200px;
+    }
+
+    .box-contact h4 {
+        width: 100%;
+    }
+
+    /* Footer */
+    .partFooter {
+        width: 95%;
+        margin-bottom: 40px;
+    }
+}
